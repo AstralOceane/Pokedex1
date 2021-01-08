@@ -2,16 +2,14 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
 //Criar função que renderiza a home page na tela
+import Header from ''
 const HomePage = () => {
 
   /**Criar jsx(html) da tela */
   return(
-    <div>
-        HomePage
-        {/**criar botao ver pokedex */}
-        <Button variant ="outlined" color = "primary">Show Pokedex</Button>
-        
-    </div>
+   <div>
+      HoME
+   </div>
   )
 }
 // Possibilitar que o componente homepage 

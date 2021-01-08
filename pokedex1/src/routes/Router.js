@@ -1,16 +1,18 @@
 import React from 'react'
-import {Switch, Route} from 'react-router-dom'
-import HomePage from '../screens/HomePage/HomePage'
-import DetailsPage from '../screens/DetailsPage/DetailsPage'
-import PokedexPage from '../screens/PokedexPage/PokedexPage'
+import {BrowserRouter,Switch, Route} from 'react-router-dom'
+import PokemonListScreen from '../screens/PokemonListScreen/PokemonListScreen'
+import PokemonDetailScreen from '../screens/PokemonDetailScreen/PokemonDetailScreen'
+import PokedexScreen from '../screens/PokedexScreen/PokedexScreen'
 
 const Router = () => {
   return(
-      <Switch>
-          <Route exact path={"/HomePage"} component={HomePage}/>
-          <Route exact path={"/pokedex"} component={PokedexPage}/>
-          <Route exact path={"/details"} component={DetailsPage}/>
-      </Switch>
+    <BrowserRouter>
+        <Switch>
+            <Route exact path={"/pokemonList"} component={PokemonListScreen}/>
+            <Route exact path={`/pokedex/${name}`} component={PokedexPage}/>
+            <Route exact path={"/details"} component={PokemonDetailScreen}/>
+        </Switch>
+    </BrowserRouter>
   )
 }
 

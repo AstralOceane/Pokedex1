@@ -1,5 +1,5 @@
 //importar o react no arquivo na linha debaixo
-
+import React from "react"
 
 //Criar função que renderiza a home page na tela na linha debaixo
 
